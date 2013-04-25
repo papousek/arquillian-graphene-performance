@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function generate() {
+                var n = document.getElementById("number").value
+                var old = document.getElementById("items");
+                var body = old.parentNode;
+                body.removeChild(old);
+                var items = document.createElement("div");
+                items.id="items";
+                for (var i=0; i<n; i++) {
+                    var item = document.createElement("div");
+                    var id = "item-".concat(i);
+                    item.innerHTML = id
+                    item.id = id
+                    items.appendChild(item)
+                }
+                body.appendChild(items);
+            }
+        </script>
+    </head>
+    <body>
+        <input id="number" value="10" />
+        <a href="#" onclick="generate()" id="generate">generate</a>
+        <div id="items">
+
+        </div>
+    </body>
+</html>
