@@ -1,0 +1,8 @@
+### measurement [static pure element]: 2302 ms
+### measurement [dynamic pure element]: 4207 ms
+### measurement [injected css element]: 3863 ms
+### measurement [injected jquery element]: 3846 ms
+### measurement [static pure elements]: 88875 ms
+### measurement [dynamic pure elements]: 91192 ms
+### measurement [injected css elements]: 194017 ms
+### measurement [injected jquery elements]: 143814 ms

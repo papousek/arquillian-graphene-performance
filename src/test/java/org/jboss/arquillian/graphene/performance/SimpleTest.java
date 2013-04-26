@@ -21,7 +21,7 @@ import org.openqa.selenium.WebElement;
 public class SimpleTest {
 
     private static final long SIZE = 100;
-    private static final long NUMBER = 100;
+    private static final long NUMBER = 50;
 
     @FindBy(id="number")
     private WebElement number;
@@ -137,7 +137,7 @@ public class SimpleTest {
             checkList(items.getTarget());
         }
         long after = System.currentTimeMillis();
-        System.out.println("### measurement [" + measurement + "]: " + (after - before) + "ms");
+        System.out.println("### measurement [" + measurement + "]: " + (after - before) + " ms");
     }
 
     protected void checkItem(WebElement item, long n) {
